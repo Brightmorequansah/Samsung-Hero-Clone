@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SamsungOne", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  font-weight: 700;
+  padding: 6px 8px 8px 8px;
+}
+
+.navbar .links li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  padding: 0 1.6rem;
+  /* border: 1px solid black; */
+  margin: 0 2.3rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 78px;
+  max-width: 2000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-section {
+  display: flex;
+  width: 87.7%;
+  /*border: 1px solid black;*/
+  justify-content: flex-end;
+}
+
+.navbar .links ul {
+  display: flex;
+  /*border: 1px solid black;*/
+}
+.navbar .links {
+  margin-right: auto;
+}
+
+.navbar .hamburger-icon {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .links-2 ul {
+  display: flex;
+}
+
+.navbar .links-2 {
+  margin-right: 3%;
+}
+
+.navbar .links-2 ul a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/*LOGO*/
+.navbar .logo img {
+  width: 104px;
+}
+
+.navbar .logo a {
+  display: flex;
+}
+
+.navbar .logo {
+  margin-right: auto;
+  /* border: 1px solid black; */
+}
+
+/* SEARCH BAR AND USER ICONS */
+.navbar .nav-icons {
+  display: flex;
+  gap: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 850px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero .content {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .links,
+  .navbar .links-2 {
+    display: none;
+  }
+
+  .navbar .nav-icons {
+    gap: 1.2rem;
+  }
+
+  .navbar .hamburger-icon {
+    display: block;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    padding-top: 1px;
+  }
+
+  .navbar {
+    height: 55px;
+  }
+
+  header {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .hero .content {
+    margin: 0;
+    align-items: center;
+  }
+
+  .hero .content h1 {
+    text-align: center;
+  }
+
+  .hero .content .nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  #learn-more {
+    margin-bottom: 10px;
+    align-self: center;
+    font-size: large;
+  }
+
+  #button {
+    width: auto;
+    align-self: center;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1040px) {
+  header,
+  .hero {
+    margin: 0;
+  }
+
+  .navbar {
+    height: 55px;
+  }
+
+}
+
+@media (max-width: 1450px) and (min-width: 1041px) {
+  header,
+  .hero {
+    margin: 0;
+  }
+}
+
+/*@media (max-width: 1550px) and (min-width: 1451px) {
+  header,
+  .hero {
+    margin: 0;
+  }
+}*/
+
+@media (max-width: 1650px) and (min-width: 1550px) {
+  header,
+  .hero {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 1800px) and (min-width: 1650px) {
+  header,
+  .hero {
+    margin: 0 8%;
+  }
+}
+
+@media (min-width: 1650px) {
+  header,
+  .hero {
+    margin: 0 12%;
+  }
+}
+
+/* HAMBURGER MENU*/
+
+.hamburger-menu {
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 285px;
+  background: rgb(115, 115, 115);
+  display: none;
+}

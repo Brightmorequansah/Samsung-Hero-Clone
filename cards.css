@@ -1,0 +1,72 @@
+.card-container {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.card-container .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5%;
+}
+
+.card-container .row .card {
+    flex: 1 4 18rem;
+    background-color: rgba(247, 247, 247, 0.74);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: 30rem;
+    justify-content: center;
+}
+
+.card-container h1 {
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+
+.card h4 {
+    font-size: 1.1rem;
+    font-family: 'Samsung Sharp Sans', sans-serif;
+    margin: 20px 0;
+}
+
+.card p{
+    font-size: 15px;
+}
+.card img {
+    width: 200px;
+    height: auto;
+}
+
+.card img:hover {
+    width: 210px;
+    transition: 0.3s ease;
+}
+
+.card .button {
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    padding: 11px 25px;
+    border-radius: 5rem;
+    margin-top: 1rem;
+
+}
+
+.card .ultra-image{
+    margin-right: 10px;
+}
+
+.button:hover{
+    background-color: rgb(75, 75, 75);
+    transition: 0.2s ease;
+}
